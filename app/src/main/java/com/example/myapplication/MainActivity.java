@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        // Crear instancias de los botones
+        // Crear instancias de los botones.
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-        // Lógica para el botón de coma decimal
+        // Lógica para el botón de coma/decimales.
         botonComa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Lógica para el botón de resultado
+        // Lógica para el botón del resultado.
         botonResultado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Lógica para el botón de borrar el último carácter
+        // Lógica para el botón de borrar el último carácter.
         botonBorrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Lógica para el botón de reset
+        // Lógica para el botón de borrar la operacion realizada anteriormente.
         botonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Función para evaluar la operación matemática
+    // Función para evaluar la operación matemática.
     public double eval(final String str) {
         return new Object() {
             int pos = -1, ch;
