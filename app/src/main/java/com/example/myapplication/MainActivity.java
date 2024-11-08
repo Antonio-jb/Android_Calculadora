@@ -100,6 +100,8 @@ public class MainActivity extends AppCompatActivity {
                 String textoActual = pantalla.getText().toString();
                 if (!textoActual.contains(".")) {
                     pantalla.append(".");
+                } else if (textoActual.contains(".")) {
+                    pantalla.append(".");
                 }
             }
         });
