@@ -9,8 +9,6 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -170,8 +168,8 @@ public class MainActivity extends AppCompatActivity {
             double parseExpression() {
                 double x = parseTerm();
                 for (; ; ) {
-                    if (eat('+')) x += parseTerm(); // addition
-                    else if (eat('-')) x -= parseTerm(); // subtraction
+                    if (eat('+')) x += parseTerm(); // suma
+                    else if (eat('-')) x -= parseTerm(); // resta
                     else return x;
                 }
             }
@@ -179,22 +177,22 @@ public class MainActivity extends AppCompatActivity {
             double parseTerm() {
                 double x = parseFactor();
                 for (; ; ) {
-                    if (eat('x')) x *= parseFactor();
-                    else if (eat('/')) x /= parseFactor();
+                    if (eat('X')) x *= parseFactor(); // Multiplicación
+                    else if (eat('/')) x /= parseFactor(); // División
                     else return x;
                 }
             }
 
             double parseFactor() {
-                if (eat('+')) return parseFactor(); // unary plus
-                if (eat('-')) return -parseFactor(); // unary minus
+                if (eat('+')) return parseFactor();
+                if (eat('-')) return -parseFactor();
 
                 double x;
                 int startPos = this.pos;
-                if (eat('(')) { // parentheses
+                if (eat('(')) { // parentesis
                     x = parseExpression();
                     eat(')');
-                } else if ((ch >= '0' && ch <= '9') || ch == '.') { // numbers
+                } else if ((ch >= '0' && ch <= '9') || ch == '.') { // números
                     while ((ch >= '0' && ch <= '9') || ch == '.') nextChar();
                     x = Double.parseDouble(str.substring(startPos, this.pos));
                 } else {
