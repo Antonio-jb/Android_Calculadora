@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Lógica para el botón de borrar el último carácter.
+        // Lógica para el botón de borrar el último carácter ingresado.
         botonBorrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -32,11 +32,15 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
+    // Glide para Java
+    implementation("com.github.bumptech.glide:glide:4.15.1")           // Glide core library
+    annotationProcessor("com.github.bumptech.glide:compiler:4.15.1")   // Glide annotation processor para Java
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

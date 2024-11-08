@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:outlineSpotShadowColor="#000000"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -42,9 +43,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="AC"
-                android:textSize="40sp"
-                />
+                android:textSize="40sp" />
 
 
             <Button
@@ -52,10 +53,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="C"
-                android:textSize="48sp"
-                />
-
+                android:textSize="48sp" />
 
 
             <Button
@@ -63,6 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="/"
                 android:textSize="48sp" />
         </LinearLayout>
@@ -77,6 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="1"
                 android:textSize="48sp" />
 
@@ -85,6 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="2"
                 android:textSize="48sp" />
 
@@ -93,6 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="3"
                 android:textSize="48sp" />
 
@@ -101,6 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="+"
                 android:textSize="48sp" />
         </LinearLayout>
@@ -115,6 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="4"
                 android:textSize="48sp" />
 
@@ -123,6 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="5"
                 android:textSize="48sp" />
 
@@ -131,6 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="6"
                 android:textSize="48sp" />
 
@@ -139,6 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="-"
                 android:textSize="48sp" />
         </LinearLayout>
@@ -153,6 +162,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="7"
                 android:textSize="48sp" />
 
@@ -161,6 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="8"
                 android:textSize="48sp" />
 
@@ -169,6 +180,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="9"
                 android:textSize="48sp" />
 
@@ -177,8 +189,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="x"
-                android:textSize="34sp" />
+                android:textSize="45sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -188,9 +202,10 @@
 
             <Button
                 android:id="@+id/button0"
-                android:layout_width="180dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text="0"
                 android:textSize="48sp" />
 
@@ -199,6 +214,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:text=","
                 android:textSize="48sp" />
 
@@ -207,8 +223,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="="
-                android:textSize="48sp" />
+                android:backgroundTint="#000000"
+                android:text="Calcular"
+                android:textSize="30sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -230,7 +247,7 @@
         android:id="@+id/textView3"
         android:layout_width="249dp"
         android:layout_height="38dp"
-        android:text="CALCULADORA"
+        android:text="¡Hora de las Matematicas!"
         android:textAlignment="viewEnd"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/Pantalla"

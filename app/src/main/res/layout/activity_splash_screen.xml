@@ -7,6 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
 
+    <View
+        android:id="@+id/splashGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:alpha="0.4"
+        />
+
+    <ImageView
+        android:id="@+id/splashGlideBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
     <ImageView
         android:id="@+id/logoSplash"
         android:layout_width="150dp"
@@ -20,12 +34,12 @@
         app:layout_constraintVertical_bias="0.335" />
 
     <TextView
-        android:id="@+id/TituloSplash"
+        android:id="@+id/SplashTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My+Calculator"
-        android:textSize="50dp"
-        android:fontFamily="sans-serif-black"
+        android:text="- My + Calculator X"
+        android:textSize="45dp"
+        android:fontFamily="@font/triforce"
         android:textColor="#FF000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
